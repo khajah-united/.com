@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
-
 
 .container,
 .container-fluid {
@@ -138,27 +136,27 @@
     Normalize    0B2C3D
 ---------------------------------------------------- */
 :root {
-  --ltn__primary-color: #000000;
-  --ltn__primary-color-2: #000000;
+  --ltn__primary-color: #071C1F;
+  --ltn__primary-color-2: #041113;
   /* Darken */
   --ltn__primary-color-3: #133236;
   /* Lighten */
   --ltn__secondary-color: #28a39e;
   --ltn__secondary-color-2: #ffffff;
   /* Darken */
-  --ltn__secondary-color-3: #fb412a;
+  --ltn__secondary-color-3: #ffffff;
   /* Lighten */
-  --ltn__heading-color: #000000;
-  --ltn__paragraph-color: #001f1e;
-  --ltn__heading-font: 'cairo Sans', sans-serif;
-  --ltn__body-font: 'cairo Sans', sans-serif;
+  --ltn__heading-color: #071c1f;
+  --ltn__paragraph-color: #5C727D;
+  --ltn__heading-font: 'Josefin Sans', sans-serif;
+  --ltn__body-font: 'Nunito Sans', sans-serif;
   /* Footer ACD2D8 8CB2B2  */
   --ltn__color-1: #8cb2b2;
   --ltn__color-2: #ACD2D8;
   --ltn__color-3: #A3BCC0;
   --ltn__color-4: #84A2A6;
   --ltn__color-5: #5C727D;
-  --ltn__color-6: #ffffff;
+  --ltn__color-6: #F5DFDC;
   /* Gradient Colors */
   --gradient-color-1: linear-gradient(90deg, rgba(242,139,194,1) 0%, rgba(216,177,242,1) 50%);
   --gradient-color-2: linear-gradient(to top, rgba(7,28,31,0) 0%, rgba(7,28,31,1) 90%);
@@ -168,7 +166,7 @@
   /* Background Colors ( 1, 2, 3, 4, 5 )  */
   --section-bg-1: #F2F6F7;
   /* White */
-  --section-bg-2: #003634;
+  --section-bg-2: #171B2A;
   /* Black */
   --section-bg-5: #FFF2F0;
   /* White */
@@ -262,14 +260,13 @@
   --youtube: #CB2027;
   --email: #F89A1E; }
 
-
 /* -------------------------------------
     Typography
 ------------------------------------- */
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family:  "Cairo", sans-serif;}
+  font-family: "Cairo", sans-serif;}
 
 * {
   -webkit-box-sizing: border-box;
@@ -285,7 +282,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  font-family:  "Cairo", sans-serif;;
+  font-family: "Cairo", sans-serif;
   line-height: 1.8;
   margin: 0 auto; 
   direction: rtl;
@@ -324,7 +321,7 @@ h6,
 .h6 {
   color: var(--ltn__heading-color);
   clear: both;
-  font-family:  "Cairo", sans-serif;;
+  font-family: "Cairo", sans-serif;
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 15px; }
@@ -369,7 +366,7 @@ kbd,
 tt,
 var,
 samp {
-  font-family: "Cairo", sans-serif;}
+  font-family: "Cairo", sans-serif; }
 
 pre {
   word-break: break-word; }
@@ -3503,7 +3500,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       text-transform: uppercase;
       background-color: var(--section-bg-1);
       font-weight: 700;
-      font-family: "Cairo", sans-serif; }
+      font-family:"Cairo", sans-serif;}
       .ltn__tagcloud-widget ul li a:hover {
         background-color: var(--ltn__secondary-color);
         color: var(--white); }
@@ -4257,7 +4254,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .header-feature-item p {
     margin-bottom: 0;
     font-size: 16px;
-    font-family:  "Cairo", sans-serif;
+    font-family: "Cairo", sans-serif;
     line-height: 1.2; }
 
 .header-feature-icon {
@@ -4305,7 +4302,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   white-space: nowrap;
   color: var(--ltn__heading-color);
   font-weight: 600;
-  font-family:  "Cairo", sans-serif; }
+  font-family: "Cairo", sans-serif;}
 
 .ltn__main-menu li:hover > a {
   color: var(--ltn__secondary-color); }
@@ -5892,7 +5889,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding: 10px 20px 3px;
   position: relative;
   text-transform: uppercase;
-  font-family:   "Cairo", sans-serif; }
+  font-family:"Cairo", sans-serif; }
   .ltn__category-menu-title h2::before, .ltn__category-menu-title h2::after {
     font-family: 'Font Awesome\ 5 Free';
     font-weight: 900;
@@ -6267,7 +6264,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     max-width: 650px; }
   .ltn__slide-item-2 .slide-sub-title {
     margin-bottom: 20px;
-    font-family:  "Cairo", sans-serif; }
+    font-family: "Cairo", sans-serif; }
     .ltn__slide-item-2 .slide-sub-title span {
       color: var(--ltn__secondary-color); }
   .ltn__slide-item-2 .slide-title {
@@ -7323,7 +7320,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     padding: 30px 30px 1px; }
   .ltn__product-item-4 .product-price {
     font-size: 18px;
-    font-family:  "Cairo", sans-serif;
+    font-family: "Cairo", sans-serif;
     font-weight: 600;
     color: var(--ltn__secondary-color);
     margin-bottom: 5px; }
@@ -8008,7 +8005,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       margin-top: 0;
       margin-bottom: 6px;
       font-size: 14px;
-      font-family:  "Cairo", sans-serif;
+      font-family: "Cairo", sans-serif;
       font-weight: 500; }
 
 .property-details-google-map {
@@ -8100,7 +8097,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .showing-product-number span {
   font-weight: 500;
   font-size: 16px;
-  font-family: "Cairo", sans-serif; }
+  font-family:"Cairo", sans-serif; }
 
 .ltn__product-list-view .product-title {
   font-size: 22px;
@@ -8705,7 +8702,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .section-subtitle {
   font-weight: 600;
-  font-family: "Cairo", sans-serif; }
+  font-family:"Cairo", sans-serif; }
 
 .section-subtitle-2 {
   display: inline-block;
@@ -8931,7 +8928,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     .ltn__category-item-5 a .category-title {
       font-size: 22px;
       font-weight: 600;
-      font-family:"Cairo", sans-serif;
+      font-family: "Cairo", sans-serif;
       color: var(--ltn__heading-color);
       -webkit-transition: all 0.3s ease 0s;
       -o-transition: all 0.3s ease 0s;
@@ -8979,7 +8976,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   transition: all 0.3s ease 0s;
   font-size: 20px;
   font-weight: 600;
-  font-family: "Cairo", sans-serif;
+  font-family:"Cairo", sans-serif;;
   color: var(--ltn__secondary-color); }
 
 .ltn__category-item-5-2 a .category-brief {
@@ -9472,7 +9469,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       background-color: var(--white);
       color: var(--ltn__secondary-color);
       text-align: center;
-      font-family:"Cairo", sans-serif; }
+      font-family: "Cairo", sans-serif; }
     .ltn__countdown-3 .single p {
       font-size: 18px;
       text-align: center;
@@ -9987,7 +9984,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 blockquote {
   font-size: 18px;
-  font-family:"Cairo", sans-serif;
+  font-family: "Cairo", sans-serif;
   line-height: 1.6;
   font-weight: 700;
   background-color: var(--section-bg-1);
@@ -10237,7 +10234,7 @@ blockquote {
     padding: 18px 0;
     margin: 0;
     font-weight: 700;
-    font-family: "Cairo", sans-serif;}
+    font-family: "Cairo", sans-serif; }
     .ltn__service-list-menu ul li:last-child {
       border-bottom: 2px solid #f6f6f6; }
     .ltn__service-list-menu ul li i {
@@ -10247,7 +10244,7 @@ blockquote {
       float: left;
       text-transform: capitalize;
       font-weight: 400;
-      font-family:"Cairo", sans-serif; }
+      font-family: "Cairo", sans-serif;}
 
 @media (max-width: 767px) {
   .ltn__service-list-menu ul li .service-price {
@@ -10848,7 +10845,7 @@ blockquote {
     font-size: 42px; }
   .ltn__counterup-item h6 {
     color: var(--ltn__color-5);
-    font-family: "Cairo", sans-serif; }
+    font-family:"Cairo", sans-serif; }
 
 /* counterup-item-2 */
 .ltn__counterup-item-2 {
@@ -12654,7 +12651,7 @@ input.cart-plus-minus-box {
     min-width: 200px;
     font-size: 16px;
     font-weight: 700;
-    font-family: "Cairo", sans-serif; }
+    font-family: "Cairo", sans-serif;}
     .ltn__service-form-box .nice-select:after {
       left: 20px; }
     .ltn__service-form-box .nice-select UL li {
@@ -12667,7 +12664,7 @@ input.cart-plus-minus-box {
     padding: 0 20px;
     border: 1px solid;
     font-weight: 700;
-    font-family: "Cairo", sans-serif;;
+    font-family: "Cairo", sans-serif;
     text-transform: uppercase; }
   .ltn__service-form-box .btn-wrapper {
     margin: 0; }
@@ -13606,7 +13603,7 @@ input.cart-plus-minus-box {
 
 .ltn__contact-feature-info .h6,
 .ltn__contact-feature-info .h2 {
-  font-family: "Cairo", sans-serif; }
+  font-family:"Cairo", sans-serif; }
 
 .ltn__contact-feature-info .h6 {
   color: var(--ltn__color-3); }
