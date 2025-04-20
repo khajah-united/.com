@@ -450,7 +450,7 @@
 
     
 
- <!-- FOOTER AREA START -->
+    <!-- FOOTER AREA START -->
     <footer class="ltn__footer-area  ">
         <div class="footer-top-area  section-bg-2 plr--5">
             <div class="container-fluid">
@@ -502,7 +502,7 @@
                                 <ul>
                                     <li><a href="about.html">من نحن</a></li>
                                    
-                                    <li><a href="">جميع المنتجات</a></li>
+                                    <li><a href="shop.html">جميع المنتجات</a></li>
                                     
                                 </ul>
                             </div>
@@ -510,11 +510,11 @@
                     </div>
                     <div class="col-xl-2 col-md-6 col-sm-6 col-12">
                         <div class="footer-widget footer-menu-widget clearfix">
-                            <h4 class="footer-title">تواصل</h4>
+                            <h4 class="footer-title">خدمتنا</h4>
                             <div class="footer-menu">
                                 <ul>
-                                  <p><a href="tel:+96566070714"> +96566070714</a></p>
-                                   <p><a href="mailto:example@example.com">info@khajahunited.com</a></p>
+                                    <li><a href="order-tracking.html">توصيل الاوردر</a></li>
+                                    <li><a href="wishlist.html">دفع آمن 100%</a></li>
                                     
                                 </ul>
                             </div>
@@ -576,45 +576,74 @@
             </div>
         </div>
     </div>
-   
- 
+
+
+
+
+
+
+
+    <!-- All JS Plugins -->
     <script src="js/plugins.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
-  
+   
+    <script>
 
-
-
-
+    
+    // الحصول على الأيقونة
+    const cartIcon = document.querySelector('.custom-cart-icon');
+    
+    // الوظيفة التي تتحقق إذا كان المستخدم قد مرر الصفحة للأسفل أو للأعلى
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) { // إذا تم التمرير لأسفل أكثر من 100px
+        cartIcon.classList.add('hidden'); // إخفاء الأيقونة
+      } else {
+        cartIcon.classList.remove('hidden'); // إظهار الأيقونة
+      }
+    });
+    </script>
 
 <script>
-    const targetDate = new Date("2025-05-16T23:59:59").getTime();
-  
-    const countdown = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-  
-      if (distance < 0) {
-        clearInterval(countdown);
-        document.querySelector(".timer").innerHTML = "<div>🎉 Offer expired!</div>";
-        return;
-      }
-  
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-      document.querySelector(".timer").innerHTML = `
-        <div><span>${days}</span><label>Days</label></div>
-        <div><span>${hours}</span><label>Hrs</label></div>
-        <div><span>${minutes}</span><label>Mins</label></div>
-        <div><span>${seconds}</span><label>Secs</label></div>
-      `;
-    }, 1000);
-  </script>
-  
+    let cart = [];
 
+    function toggleCart() {
+      const cartSidebar = document.getElementById('cartSidebar');
+      cartSidebar.classList.toggle('open');
+    }
+
+    function addToCart(name, price, image) {
+      cart.push({ name, price, image });
+      updateCart();
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      updateCart();
+    }
+
+    function updateCart() {
+      const cartItems = document.getElementById('cartItems');
+      cartItems.innerHTML = '';
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        total += item.price;
+        cartItems.innerHTML += `
+          <div class="custom-cart-item">
+            <img src="${item.image}" alt="${item.name}">
+            <div class="custom-cart-info">
+              <p>${item.name}</p>
+              <small>${item.price} KWD</small>
+            </div>
+            <span class="custom-remove-btn" onclick="removeItem(${index})">&times;</span>
+          </div>
+        `;
+      });
+
+      document.getElementById('totalPrice').innerText = `الإجمالي: ${total} KWD`;
+    }
+  </script>
 
 </body>
 </html>
