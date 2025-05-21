@@ -15055,3 +15055,29 @@ input.cart-plus-minus-box {
 .mini-cart-icon-2 {
   float: left;
 }
+
+
+
+
+.x9r-bc1 {
+  text-align: center;
+}
+
+.btn-xp4pay {
+  background-color: #1abc9c;
+  color: white;
+  padding: 12px 22px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 200px;
+}
+
+.btn-xp4pay:hover {
+  background-color: #16a085;
+  transform: scale(1.05);
+}
